@@ -1,4 +1,4 @@
-import { SummaryCard } from "./components/SummaryCard";
+import { SummaryCard } from "./SummaryCard";
 import { SummaryContainer } from "./styles";
 
 import { ArrowCircleUp, ArrowCircleDown, CurrencyDollar } from "phosphor-react";
