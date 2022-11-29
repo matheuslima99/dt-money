@@ -4,7 +4,7 @@ import { SummaryCardContainer, SummaryCardHeader } from "./styles";
 interface SumaryCardProps {
   variant?: "green";
   title: string;
-  value: number;
+  value: string;
   icon: ReactNode;
 }
 
