@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
-import { SummaryCardContainer, SummaryCardHeader } from "./styles";
+import { ReactNode } from 'react'
+import { SummaryCardContainer, SummaryCardHeader } from './styles'
 
 interface SumaryCardProps {
-  variant?: "green";
-  title: string;
-  value: string;
-  icon: ReactNode;
+  variant?: 'green'
+  title: string
+  value: string
+  icon: ReactNode
 }
 
 export function SummaryCard({ title, icon, variant, value }: SumaryCardProps) {
@@ -17,5 +17,5 @@ export function SummaryCard({ title, icon, variant, value }: SumaryCardProps) {
       </SummaryCardHeader>
       <strong>{value}</strong>
     </SummaryCardContainer>
-  );
+  )
 }
