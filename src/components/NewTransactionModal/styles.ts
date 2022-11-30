@@ -33,6 +33,7 @@ export const Content = styled(Dialog.Content)`
       outline: none;
       border: none;
       border-radius: 6px;
+      color: ${(props) => props.theme["gray-100"]};
       background: ${(props) => props.theme["gray-900"]};
 
       &::placeholder {
@@ -51,7 +52,12 @@ export const Content = styled(Dialog.Content)`
       color: ${(props) => props.theme["white"]};
       background: ${(props) => props.theme["green-500"]};
 
-      &:hover {
+      &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):hover {
         background: ${(props) => props.theme["green-700"]};
         transition: background-color 0.2s;
       }
@@ -66,6 +72,7 @@ export const CloseButton = styled(Dialog.Close)`
   line-height: 0;
   border: none;
   outline: none;
+  cursor: pointer;
   color: ${(props) => props.theme["gray-500"]};
   background: transparent;
 `;
